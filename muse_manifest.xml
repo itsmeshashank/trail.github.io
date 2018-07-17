@@ -1,0 +1,27 @@
+<manifest alg="2" build="2017.0.1.363" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster" exportTarget="other" domain="www.Infoviz.com" resolutions="1x" timestamp="1531373491145">
+  <folder name="css">
+    <file name="site_global.css" crc="443350757"/>
+    <file name="email-instructor.css" crc="4105992737" ref="email-instructor"/>
+    <file name="data.css" crc="278486216" ref="data"/>
+    <file name="resources.css" crc="48000235" ref="resources"/>
+    <file name="software.css" crc="119860493" ref="software"/>
+    <file name="class-notes.css" crc="4288327036" ref="class-notes"/>
+    <file name="index.css" crc="498137220" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:class-notes:software:data:resources:email-instructor"/>
+    <file name="museutils.js" crc="4148063285" ref="index:class-notes:software:data:resources:email-instructor"/>
+    <file name="whatinput.js" crc="86476730" ref="index:class-notes:software:data:resources:email-instructor"/>
+    <file name="museconfig.js" crc="172512987" ref="index:class-notes:software:data:resources:email-instructor"/>
+    <file name="jquery.musemenu.js" crc="3765830709" ref="index:class-notes:software:data:resources:email-instructor"/>
+    <file name="jquery.watch.js" crc="437028206" ref="index:class-notes:software:data:resources:email-instructor"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:class-notes:software:data:resources:email-instructor"/>
+    <file name="require.js" crc="4159430777" ref="index:class-notes:software:data:resources:email-instructor"/>
+  </folder>
+  <file name="index.html" crc="3782227738" seo="true" mt="1531372601313" redirect="true"/>
+  <file name="class-notes.html" crc="374602029" seo="true" mt="1531372804686" redirect="true"/>
+  <file name="software.html" crc="449907218" seo="true" mt="1531372963134" redirect="true"/>
+  <file name="data.html" crc="149244075" seo="true" mt="1531373041784" redirect="true"/>
+  <file name="resources.html" crc="4040467192" seo="true" mt="1531373032624" redirect="true"/>
+  <file name="email-instructor.html" crc="201754174" seo="true" mt="1531373113127" redirect="true"/>
+</manifest>

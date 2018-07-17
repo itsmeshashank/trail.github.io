@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="en-US">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2017.0.1.363"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musemenu.js", "jquery.watch.js", "require.js", "class-notes.css"], "outOfDate":[]};
+</script>
+  
+  <title>Class Notes</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="css/site_global.css?crc=443350757"/>
+  <link rel="stylesheet" type="text/css" href="css/class-notes.css?crc=4288327036" id="pagesheet"/>
+  <!-- JS includes -->
+  <!--[if lt IE 9]>
+  <script src="scripts/html5shiv.js?crc=4241844378" type="text/javascript"></script>
+  <![endif]-->
+   </head>
+ <body>
+
+  <div class="clearfix borderbox" id="page"><!-- column -->
+   <nav class="MenuBar clearfix colelem" id="menuu608"><!-- horizontal box -->
+    <div class="MenuItemContainer borderbox clearfix grpelem" id="u637"><!-- vertical box -->
+     <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u638" href="index.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u639-4"><!-- content --><p>Intro Data Viz</p></div></a>
+    </div>
+    <div class="MenuItemContainer borderbox clearfix grpelem" id="u630"><!-- vertical box -->
+     <a class="nonblock nontext MenuItem MenuItemWithSubMenu MuseMenuActive borderbox clearfix colelem" id="u631" href="class-notes.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u634-4"><!-- content --><p>Class Notes</p></div></a>
+    </div>
+    <div class="MenuItemContainer borderbox clearfix grpelem" id="u623"><!-- vertical box -->
+     <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u624" href="software.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u625-4"><!-- content --><p>Software</p></div></a>
+    </div>
+    <div class="MenuItemContainer borderbox clearfix grpelem" id="u609"><!-- vertical box -->
+     <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u612" href="data.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u613-4"><!-- content --><p>Data</p></div></a>
+    </div>
+    <div class="MenuItemContainer borderbox clearfix grpelem" id="u616"><!-- vertical box -->
+     <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u619" href="resources.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u620-4"><!-- content --><p>Resources</p></div></a>
+    </div>
+    <div class="MenuItemContainer borderbox clearfix grpelem" id="u644"><!-- vertical box -->
+     <a class="nonblock nontext MenuItem MenuItemWithSubMenu borderbox clearfix colelem" id="u645" href="email-instructor.html"><!-- horizontal box --><div class="MenuItemLabel NoWrap borderbox clearfix grpelem" id="u646-4"><!-- content --><p>Email Instructor</p></div></a>
+    </div>
+   </nav>
+   <div class="clearfix colelem" id="u878-56"><!-- content -->
+    <p id="u878-2">What is data?</p>
+    <p>This is a class in data visualization. But before we leap into making charts and maps, we’ll consider the nature of data, and some basic principles that will help you to “interview” datasets to find and tell stories. This is not a class in statistics, but I will introduce a few fundamental statistical concepts, which hopefully will stand you in good stead as we work to visualize data over the next few weeks — and beyond.</p>
+    <p>&nbsp;</p>
+    <p>We’re often told that there are “lies, damned lies, and statistics.” But data visualization and statistics provide a view of the world that we can’t otherwise obtain. They give us a framework to make sense of daunting and otherwise meaningless masses of information. The “lies” that data and graphics can tell arise when people misuse statistics and visualization methods, not when they are used correctly.</p>
+    <p>&nbsp;</p>
+    <p>The best data journalists understand that statistics and graphics go hand-in-hand. Just as numbers can be made to lie, graphics may misinform if the designer is ignorant of or abuses basic statistical principles. You don’t have to be an expert statistician to make effective charts and maps, but understanding some basic principles will help you to tell a convincing and compelling story — enlightening rather than misleading your audience.</p>
+    <p>&nbsp;</p>
+    <p>I hope you will get hooked on the power of a statistical way of thinking. As data artist Martin Wattenberg of Google has said: “Visualization is a gateway drug to statistics.”</p>
+    <p>&nbsp;</p>
+    <p>The data we will use today</p>
+    <p>Download the data for this session from here, unzip the folder and place it on your desktop. It contains the following files:</p>
+    <p>&nbsp;</p>
+    <p>mlb_salaries_2014.csv Salaries of players in Major League Baseball at the start of the 2014 season, from the Lahman Baseball Database.</p>
+    <p>&nbsp;</p>
+    <p>disease_democ.csv Data illustrating a controversial theory suggesting that the emergence of democratic political systems has depended largely on nations having low rates of infectious disease, from the Global Infectious Diseases and Epidemiology Network and Democratization: A Comparative Analysis of 170 Countries.</p>
+    <p>&nbsp;</p>
+    <p>gdp_pc.csv World Bank data on 2014 Gross Domestic Product (GDP) per capita for the world’s nations, in current international dollars, corrected for purchasing power in different territories.</p>
+    <p>&nbsp;</p>
+    <p>All of these files are in CSV format, which stands for comma-separated values. These are plain text files, in which fields in the data are separated by commas, and each record is on a separate row. CSV is a common format for storing and exchanging data, and can be read by most data analysis and visualization software. Values that are intended to be treated as text, rather than numbers, are often enclosed in quote marks.</p>
+    <p>&nbsp;</p>
+    <p>When you ask for data, requesting CSVs or other plain text files is a good idea, as just about all software that handles data can export data as text. The characters used to separate the variables, called ‘delimiters,’ may vary. a .tsv extension, for instance, indicates that the variables are separated by tabs. More generally, text files have the extention .txt.</p>
+    <p>&nbsp;</p>
+    <p>Types of data: categorical vs. continuous</p>
+    <p>Before analyzing a dataset, or attempting to draw a graphic, it’s important to consider what, exactly, you’re working with.</p>
+    <p>&nbsp;</p>
+    <p>Statisticians often use the term “variable.” This simply means any measure or attribute describing a particular item, or “record,” in a dataset. For example, school students might gather data about themselves for a class project, recording their gender and eye color, and height and weight. There’s an important difference between gender and eye color, called “categorical” variables, and height and weight, termed “continuous.”</p>
+    <p>&nbsp;</p>
+    <p>Categorical variables are descriptive labels given to individual records, assigning them to different groups. The simplest categorical data is dichotomous, meaning that there are just two possible groups — in an election, for instance, people either voted, or they did not. More commonly, there are multiple categories. When analyzing traffic accidents, for example, you might consider the day of the week on which each incident occurred, giving seven possible categories.</p>
+    <p>&nbsp;</p>
+    <p>Continuous data is richer, consisting of numbers that can have a range of values on a sliding scale. When working with weather data, for instance, continuous variables might include temperature and amount of rainfall.</p>
+    <p>&nbsp;</p>
+    <p>There’s a third type of data we often need to consider: date and time. Perhaps the most common task in data journalism is to consider how a variable or variables have changed over time.</p>
+    <p>&nbsp;</p>
+    <p>Datasets will usually contain a mixture of categorical and continuous variables. Here, for example, is a small part of a spreadsheet containing data on salaries for Major League Baseball players at the opening of the 2014 season:</p>
+    <p>&nbsp;</p>
+   </div>
+   <div class="verticalspacer" data-offset-top="1124" data-content-above-spacer="1124" data-content-below-spacer="62"></div>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   window.Muse.assets.check=function(d){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},c=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},g=function(g){for(var f=document.getElementsByTagName("link"),h=0;h<f.length;h++)if("text/css"==f[h].type){var i=(f[h].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!i||!i[1]||!i[2])break;b[i[1]]=i[2]}f=document.createElement("div");f.className="version";f.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(f);for(h=0;h<Muse.assets.required.length;){var i=Muse.assets.required[h],l=i.match(/([\w\-\.]+)\.(\w+)$/),k=l&&l[1]?
+l[1]:null,l=l&&l[2]?l[2]:null;switch(l.toLowerCase()){case "css":k=k.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");f.className+=" "+k;k=a(c(f,"color"));l=a(c(f,"backgroundColor"));k!=0||l!=0?(Muse.assets.required.splice(h,1),"undefined"!=typeof b[i]&&(k!=b[i]>>>24||l!=(b[i]&16777215))&&Muse.assets.outOfDate.push(i)):h++;f.className="version";break;case "js":h++;break;default:throw Error("Unsupported file type: "+l);}}d?d().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+f.parentNode.removeChild(f);if(Muse.assets.outOfDate.length||Muse.assets.required.length)f="Some files on the server may be missing or incorrect. Clear browser cache and try again. If the problem persists please contact website author.",g&&Muse.assets.outOfDate.length&&(f+="\nOut of date: "+Muse.assets.outOfDate.join(",")),g&&Muse.assets.required.length&&(f+="\nMissing: "+Muse.assets.required.join(",")),alert(f)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?setTimeout(function(){g(!0)},5E3):g()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musemenu","jquery.watch"],function(d){var $ = d;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.initWidget('.MenuBar', ['#bp_infinity'], function(elem) { return $(elem).museMenu(); });/* unifiedNavBar */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=4159430777" type="text/javascript" async data-main="scripts/museconfig.js?crc=172512987" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   </body>
+</html>
